@@ -1,0 +1,40 @@
+name: Mirror all release assets to GitHub Pages
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all relevant release assets
+        uses: actions/download-release-asset@v1
+        with:
+          token: ${{ secrets.mooodboard-app }}
+          asset_names: |
+            Moooodboard-0.2.19-arm64-mac.zip.blockmap
+            Moooodboard-0.2.19-arm64.dmg
+            Moooodboard-0.2.19-arm64.dmg.blockmap
+
+      - name: Checkout public mirror repo
+        uses: actions/checkout@v4
+        with:
+          repository: bryangrisales/mooodboard-downloads
+          token: ${{ secrets.MIRROR_REPO_PAT }}
+          path: mirror
+
+      - name: Copy files into mirror repo
+        run: |
+          cp Moooodboard-* mirror/
+          cd mirror
+          git config user.name "bryangrisales"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Add release assets for 0.2.19"
+          git push

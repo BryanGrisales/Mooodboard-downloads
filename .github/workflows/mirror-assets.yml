@@ -18,9 +18,7 @@ jobs:
         with:
           token: ${{ secrets.mooodboard-app }}
           asset_names: |
-            Moooodboard-0.2.19-arm64-mac.zip.blockmap
             Moooodboard-0.2.19-arm64.dmg
-            Moooodboard-0.2.19-arm64.dmg.blockmap
 
       - name: Checkout public mirror repo
         uses: actions/checkout@v4

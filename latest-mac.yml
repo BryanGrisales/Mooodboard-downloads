@@ -1,11 +1,11 @@
-version: 0.2.33
+version: 0.2.35
 files:
-  - url: Mooodboard-0.2.33-arm64-mac.zip
-    sha512: hSBPTN4J9nr6QhXADd+I+5DBEUwDx6NeQuGgfVIDQ8lpK+0QgngZgJPoGIvTw0Rmx0uejbjJFJMKlZqXRPhi7g==
-    size: 184490989
-  - url: Mooodboard-0.2.33-arm64.dmg
-    sha512: aZBZhui9mUYfWRr7ptm/nOgwzFzzGYHMKyUyc5sf7pU49ddjbGY6u3n0ioPmbLJzLpuAGJd7IdJ2BmUObziiuA==
-    size: 192801975
-path: Mooodboard-0.2.33-arm64-mac.zip
-sha512: hSBPTN4J9nr6QhXADd+I+5DBEUwDx6NeQuGgfVIDQ8lpK+0QgngZgJPoGIvTw0Rmx0uejbjJFJMKlZqXRPhi7g==
-releaseDate: '2025-07-18T04:51:56.067Z'
+  - url: Mooodboard-0.2.35-arm64-mac.zip
+    sha512: Xo1IUG/l4ABimvLhgjVpLGB1yeLViPFMxgIZhpE9EMf5HJxQCL+koAXo9pJCGOHTj9tGQI9l277g2Bf0giiUow==
+    size: 184491006
+  - url: Mooodboard-0.2.35-arm64.dmg
+    sha512: qp1wLGSx1xRxIGNLOFtIYzY+kznUK40uLkrNqxd2R2CS6FtOCfn/L+04ilyOYghWMOvzP1BLOdVc/SqzKsY8bg==
+    size: 192827216
+path: Mooodboard-0.2.35-arm64-mac.zip
+sha512: Xo1IUG/l4ABimvLhgjVpLGB1yeLViPFMxgIZhpE9EMf5HJxQCL+koAXo9pJCGOHTj9tGQI9l277g2Bf0giiUow==
+releaseDate: '2025-07-18T05:12:57.958Z'
